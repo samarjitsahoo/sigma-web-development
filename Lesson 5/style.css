@@ -1,3 +1,25 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+img{
+    border: 8px solid purple;
+}
+
 td{
     border: 2px solid black;
+}
+
+th{
+    border: 2px solid blue;
+}
+
+caption{
+    border: 2px solid red;
+    
+}
+
+li, dd{
+    border: 2px solid green;
 }
