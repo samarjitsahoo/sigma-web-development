@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and inputs</title>
+</head>
+
+<body>
+    <!-- for and id should have same value for targeting input with label | name and value is for server side | for helps in selecting the input from the label text-->
+    <h2>Form to apply for Sigma Web Development</h2>
+    <form action="">
+        <div>
+            <!-- for and id should have same value for targeting input with label -->
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" >
+        </div>
+        <div>
+            <!-- name and value goes to the server -->
+            <!-- name should be equal for radio buttons to select only one -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="subscribe">Subscribe to newsletter</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        </div>
+        <div>
+            <label for="comment">Enter your comment here...</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <!-- name and value is for server side -->
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana" selected>Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
