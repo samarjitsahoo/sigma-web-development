@@ -1,0 +1,29 @@
+.red{
+    color: red;
+}
+/* Cyan overrides yellow because the ID selector #head is more specific than the class selector .bg-yellow, and the styles defined in the ID selector take precedence. */
+#head{
+    background-color: yellow;
+}
+
+.bg-yellow{
+    background-color: cyan;
+}
+
+.bg-hotpink{
+    background-color: hotpink;
+}
+
+/* The following code will make the text color orange, because the last color property in the CSS code will override the first one. */
+#firstdiv{
+    color: violet;
+    color: orange;
+}
+
+/* The thing which is written later, will be considered */
+.bg-green{
+    background-color: green;
+}
+.bg-purple{
+    background-color: purple;
+}
