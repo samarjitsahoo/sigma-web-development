@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio</title>
+</head>
+<body>
+    <video src="1.mp4" controls height="555" loop muted poster="1.jpg"></video>
+    <!-- Attributes for <video> Tag
+        src: Specifies the path to the video file.
+        controls: Adds video controls, like play, pause, and volume.
+        autoplay: Automatically starts playing the video when the page loads.
+        loop: Repeats the video once it ends.
+        muted: Mutes the video by default.
+        poster: Specifies an image to be displayed before the video starts playing.
+        width and height: Specifies the dimensions of the video. -->
+    <audio src="1.mp3" controls loop></audio>
+    <!-- Attributes for <audio> Tag
+        src: Specifies the path to the audio file.
+        controls: Adds audio controls, like play, pause, and volume.
+        autoplay: Automatically starts playing the audio when the page loads.
+        loop: Repeats the audio once it ends.
+        muted: Mutes the audio by default.
+        preload: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata', 'none'). -->
+
+        <!-- The "preload" attribute can have the following values:
+        
+        none: This is the default value. It indicates that the browser should not preload the audio file at all. The audio file
+        will only start downloading when the user initiates playback.
+        
+        metadata: This value tells the browser to preload only the metadata of the audio file, such as its duration and basic
+        information about the audio. This can be useful if you want to display the audio duration to the user without fully
+        loading the audio data.
+        
+        auto: This value instructs the browser to preload the entire audio file as much as possible without delaying the loading
+        of other important page content. The browser will try to load the audio file in the background so that it's ready to
+        play when the user decides to start it. -->
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <img src="circle.svg" alt="Error in SVG">
+    <img src="rect.svg" alt="Error">
+
+    <iframe src="https://samarjit.vercel.app/" width="500" height="500"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zajUgQLviwk?si=b3ec6SytJZFdGTqT&amp;start=58"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/60ItHLz5WEA?si=IzS-MPlQsWa_etW0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.1335970158!2d85.89356167469906!3d20.445291707563758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190d0049c3a72d%3A0xf3f4cf5e4098a38f!2sSamarjit&#39;s%20Point!5e1!3m2!1sen!2sin!4v1741188745815!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.4876309321007!2d-118.2551358325932!3d34.05152891021242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b36b1fa4d5%3A0xa7fab92c9e7abb14!2sU.S.%20Bank%20Tower%2C%20Los%20Angeles%2C%20CA%2090071%2C%20USA!5e1!3m2!1sen!2sin!4v1741188857958!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Quick Quiz  -->
+    <!-- Create a website which shows videos of different category and audios of different categories.
+        You can use YouTube videos in an iframe using YouTube's embedding feature -->
+    <div>
+        <h2>Song Category</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sPT59E_RG1k?si=6qDeDx2kFpSoyAuA"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qobPoUNwrqk?si=3ZwGNmk5ekUHUFNd"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+        <h2>Study Category</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8NKhyaBpfIU?si=9xiQ--gw3zT_ra7_"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X8BYu3dMKf0?si=AFWFwP9EadgbWO60"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </body>
+    </html>
