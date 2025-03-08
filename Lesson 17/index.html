@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+        /* ID Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selector (Direct immediate Child)*/
+        div>p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendant Selector */
+        /* all the p inside div will be selected */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        /* First child pseudo selector (Only first child will be applied)*/
+        p:first-child {
+            background-color: aqua;
+        }
+
+        /* Last child pseudo selector (Only last child will be applied)*/
+        p:last-child {
+            background-color: hotpink;
+        }
+
+        /* nth child pseudo selector */
+        /* Selects every even child (2nd, 4th, 6th, ...) */
+        li:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        /* Selects every odd child (1st, 3rd, 5th, ...) */
+        li:nth-child(odd) {
+            background-color: lightgreen;
+        }
+
+        /* Selects the 3rd child only */
+        li:nth-child(3) {
+            font-weight: bold;
+        }
+
+        /* Selects every 3rd child (3, 6, 9, ...) */
+        li:nth-child(3n) {
+            color: red;
+        }
+
+        /* Selects every 3rd child starting from the 2nd (2, 5, 8, ...) */
+        li:nth-child(3n+2) {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit consequuntur harum excepturi.</p>
+        </article>
+    </div>
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://samarjit.vercel.app" target="_blank">Go to Samarjit</a>
+    <a href="https://openai.com" target="_blank">Go to OpenAI</a>
+    <a href="https://mapbox.com" target="_blank">Go to Mapbox</a>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+
+</body>
+
+</html>
