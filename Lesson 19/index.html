@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap"
+        rel="stylesheet"> -->
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap'); */
+
+        /* Two fonts are coming with one import statement */
+        /* Try importing whatever font you want, all with a single import statement. */
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        h1 {
+            font-family: "Poppins", Times, serif;
+        }
+
+        p {
+            /* Fallback fonts */
+            /* Mian font is Segoe UI and fallback fonts are Tahoma, Geneva, Verdana, sans-serif; */
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Big Shoulders Stencil", sans-serif;
+            /* font-style: italic;
+            font-weight: 800; */
+            text-decoration: underline;
+            font-size: 20px;
+            line-height: 4;
+            letter-spacing: 2px;
+        }
+        h2{
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: blue;
+            /* text-decoration-style: dotted; */
+            text-decoration-thickness: 6px;
+            /* text-indent: 45px; */
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 145px;
+            word-break: break-all;
+            /* text-overflow: clip;
+            overflow: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>This is a video on Fonts.</p>
+        <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium error sed cumque explicabo maiores id dolores eos, eligendi, unde in illo doloribus ullam perspiciatis magni dolorum aspernatur voluptas hic adipisci eum amet quisquam autem? Explicabo maxime facilis similique distinctio voluptatum, recusandae libero architecto laudantium accusantium.</p>
+    </div>
+</body>
+
+</html>
