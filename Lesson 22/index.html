@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* width: 1535px; */
+            width: 80vw;
+            /* 100% of viewport width for responsiveness unit*/
+            box-sizing: border-box;
+            margin: auto;
+            height: 10vh;
+        }
+
+        .container {
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* width: 1535px; */
+            width: 80vw;
+            /* 100% of viewport width for responsiveness unit*/
+            box-sizing: border-box;
+            margin: 23px auto;
+            /* height: 80vh; */
+            min-height: 80vh;
+            /* 100% of viewport height for responsiveness unit*/
+            font-size: 18px;
+        }
+
+        .container > div {
+            font-size: 2em;
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        .container > div div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont {
+            margin: 23px auto;
+            border: 2px solid black;
+            box-sizing: border-box;
+            color: black;
+            font-size: 22px;
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units -->
+    <div class="box">This is a box</div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat pariatur sunt earum vero? Maxime neque
+            voluptas quisquam, fugiat ipsa quibusdam sequi delectus quo aperiam porro culpa nisi dolorem.
+            Exercitationem, obcaecati quaerat. Earum delectus ipsam repellendus nulla excepturi neque repudiandae est
+            eos laborum accusamus. Sequi assumenda quas repellendus in dolores? Ipsum, hic quibusdam. Facilis labore ex
+            architecto!
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, asperiores? Harum totam ab quae, id iure repellat, earum repellendus labore repudiandae distinctio fuga.</div>
+        </div>
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+
+</html>
