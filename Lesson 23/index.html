@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Display inline-block property is used to set the display property of an element to inline-block. An inline-block element is placed as an inline element (on the same line as adjacent content), but it behaves as a block element, it respects width and height properties, meaning you can set width, height, padding, and margin as you would for a block element. */
+        .box{
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+            width: 344px;
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+            background-color: aliceblue;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">I am a box</div>
+    <div class="box">Also a nice box</div>
+    <span>I am a good </span>
+    <span>boy</span>
+    
+</body>
+</html>
